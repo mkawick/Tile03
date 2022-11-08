@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48db9260c9a3d3c4788fdd2d6b167c0d, type: 3}
+  m_Name: TileMapEditorPersistentence
+  m_EditorClassIdentifier: 
+  cursorPrefab: {fileID: 8449360214247375783, guid: f7a614929eb4c334795f57b33cd81948, type: 3}
+  isEnabled: 1
+  tileTexture: {fileID: 2100000, guid: e5620c35b838f2a4d94c073e05fa2ba2, type: 2}
+  planeDimensions: {x: 16, y: 16}
+  scale: {x: 1, y: 1, z: 1}
+  lastWorkingMapFile: 
+  tilePlacementGroups: []

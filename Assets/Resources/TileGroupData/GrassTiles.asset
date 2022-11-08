@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26075dc64e173ce439a3255e5dcb9ec8, type: 3}
+  m_Name: GrassTiles
+  m_EditorClassIdentifier: Assembly-CSharp::TileGroupObject
+  prefabName: GrassBasic
+  tiles:
+  - {fileID: 3117171569847213782, guid: 27f23fa679efb4d419b007e9543d37c8, type: 3}
+  - {fileID: 3117171569847213782, guid: 72e704e0e64c04b478500732fbf146d5, type: 3}
+  - {fileID: 3117171569847213782, guid: 4b4ce9362193e91428578920193edf36, type: 3}
+  - {fileID: 3117171569847213782, guid: d476c13f77982ba4889b61f0e6e6dfb9, type: 3}
+  - {fileID: 3117171569847213782, guid: 2c0d49b42daf0ec4d96015043cca6954, type: 3}
+  - {fileID: 3117171569847213782, guid: 4e8335db71526714b8f389f2429dd85d, type: 3}
+  - {fileID: 3117171569847213782, guid: 4e8ca15055c3d74428b8cfad7419a9f0, type: 3}
+  - {fileID: 3117171569847213782, guid: 9f862845845808d41aee8d5b3708648f, type: 3}
+  - {fileID: 3117171569847213782, guid: 1dde81cdb6386564fbdcb4541902b14a, type: 3}

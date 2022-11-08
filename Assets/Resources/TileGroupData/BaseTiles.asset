@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26075dc64e173ce439a3255e5dcb9ec8, type: 3}
+  m_Name: BaseTiles
+  m_EditorClassIdentifier: Assembly-CSharp::TileGroupObject
+  prefabName: Cursor
+  tiles:
+  - {fileID: 3307617727373316003, guid: 05765ff6471103148b0b6826cd0ef8db, type: 3}

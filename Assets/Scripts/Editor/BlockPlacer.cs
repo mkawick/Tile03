@@ -45,9 +45,9 @@ public class TileMapUtils
         {
             mouseMoved = UpdateCurorPosition();
             MoveBlockCursor();
-            PlaceBlock();
-            RemoveBlock();
         }
+        PlaceBlock();
+        RemoveBlock();
 
         if (Event.current != null && Event.current.isKey)
         {
@@ -216,15 +216,21 @@ public class TileMapUtils
 
     void PlaceBlock()
     {
-        if (Event.current.button == 0 && paintEnabled)
+        if (paintEnabled)
         {
+            Debug.Log("PlaceBlock");
             if (DoesSpotAlreadyContainBlock(cursorPosition) == false)
             {
+                Debug.Log("Add block");
                 var obj = AddBlock(cursorPosition);
                 if (obj)
                 {
                     obj.transform.parent = placedObjectsRoot.transform;
                 }
+            }
+            else
+            {
+                Debug.Log("PlaceBlock: block already there");
             }
         }
     }

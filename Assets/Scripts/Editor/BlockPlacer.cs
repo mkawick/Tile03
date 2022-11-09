@@ -17,6 +17,7 @@ public class TileMapUtils
     float elevation = 0;
     Vector3 cursorPosition;
     bool paintEnabled = false;
+    bool eraseEnabled = false;
 
     GameObject selectedBlockCursor;
 
@@ -72,13 +73,40 @@ public class TileMapUtils
                 }
                 if (Event.current.keyCode == KeyCode.P)
                 {
-                    paintEnabled = !paintEnabled;
-                    selectedBlockCursor.gameObject.SetActive(paintEnabled);
+                    paintEnabled = false;
+                    EnableBlockCursor(paintEnabled);
+                }
+
+                if (Event.current.keyCode == KeyCode.O)// erase
+                {
+                    eraseEnabled = false;
+                    EnableBlockCursor(paintEnabled);// if paint was enabled
                 }
             }
+            else if (Event.current.type == EventType.KeyDown)
+            {
+                if (Event.current.keyCode == KeyCode.P)
+                {
+                    paintEnabled = true;
+                    EnableBlockCursor(paintEnabled);
+                }
+                if (Event.current.keyCode == KeyCode.O)// erase
+                {
+                    eraseEnabled = true;
+                    EnableBlockCursor(false);
+                }
+            }
+            
+
         }
         
         return mouseMoved;
+    }
+
+    void EnableBlockCursor(bool isEnabled)
+    {
+        if (selectedBlockCursor)
+            selectedBlockCursor.gameObject.SetActive(paintEnabled);
     }
 
     bool UpdateCurorPosition()
@@ -141,30 +169,32 @@ public class TileMapUtils
 
     void SelectNextBlockCursor()
     {
-        blockIndex++;
-
         if (tilePlacementGroups != null)
         {
+            blockIndex++;
             LimitRange(ref bankIndex, tilePlacementGroups.Length);
             var currentBank = tilePlacementGroups[bankIndex];
             if (currentBank != null)
             {
                 LimitRange(ref blockIndex, currentBank.tiles.Length);
 
+                var position = Vector3.one;
                 if (selectedBlockCursor != null)
                 {
-                    GameObject.DestroyImmediate(selectedBlockCursor);
+                    position = selectedBlockCursor.transform.position;
+                    GameObject.DestroyImmediate(selectedBlockCursor);                    
                 }
                 selectedBlockCursor = GameObject.Instantiate(currentBank.tiles[blockIndex]);
+                selectedBlockCursor.transform.position = position;
             }
         }
     }
 
     void SelectNextBankIndex()
     {
-        bankIndex++;
         if (tilePlacementGroups != null)
         {
+            bankIndex++;
             LimitRange(ref bankIndex, tilePlacementGroups.Length);
             var currentBank = tilePlacementGroups[bankIndex];
             if (currentBank != null)
@@ -201,7 +231,7 @@ public class TileMapUtils
 
     private void RemoveBlock()
     {
-        if (Event.current.button == 1 && paintEnabled)
+        if (eraseEnabled)
         {
             if (DoesSpotAlreadyContainBlock(cursorPosition) == false)
             {

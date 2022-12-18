@@ -8,6 +8,8 @@
 /[Bb]uild/
 /[Bb]uilds/
 /[Ll]ogs/
+/[Pp]lugins/
+/[Aa]ssets/Plugins*
 /[Uu]ser[Ss]ettings/
 
 # MemoryCaptures can get excessive in size.
@@ -33,6 +35,7 @@
 ExportedObj/
 .consulo/
 *.csproj
+*.cache
 *.unityproj
 *.sln
 *.suo

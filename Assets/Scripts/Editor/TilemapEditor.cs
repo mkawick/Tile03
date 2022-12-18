@@ -4,6 +4,9 @@ using UnityEngine;
 using UnityEditor;
 using System;
 
+
+// This is the main tile editor and works well.
+
 [InitializeOnLoad]
 public class TilemapEditor : EditorWindow
 {
@@ -13,10 +16,13 @@ public class TilemapEditor : EditorWindow
     [SerializeField] GameObject placedObjectsRoot;
     TileMapUtils mapper;
 
+    TableMatrix01 simpleMap; // needs to be a list
+
     public void Awake()
     {
         InitAllData();
     }
+
     //public Plane plane;
     void OnGUI()
     {
@@ -124,6 +130,15 @@ public class TilemapEditor : EditorWindow
         CreatePlane();
 
         CreateMap();
+
+        TableMatrix01.TileSelected += SelectTile;
+    }
+
+    private void SelectTile(GameObject go)
+    {
+        Debug.Log($"TilemapEditor... callback enabled {go.name}");
+        if (go != null)
+            CreateCursor(go);
     }
 
     private void CreateMap()
@@ -224,6 +239,7 @@ public class TilemapEditor : EditorWindow
 
     void OnDestroy()
     {
+        TableMatrix01.TileSelected -= SelectTile;
         SceneView.duringSceneGui -= OnSceneGUI;
         DestroyImmediate(cursorObject);
         DestroyImmediate(placedObjectsRoot);

@@ -1,9 +1,9 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "TileGroup", menuName = "Data/TileGroup", order = 1)]
+[CreateAssetMenu(fileName = "TileGroup", menuName = "Data/TileGroupData", order = 1)]
 public class TileGroupData : ScriptableObject
 {
     public string prefabName;
 
-    public GameObject [] tiles;
+    public TileList tileList;
 }

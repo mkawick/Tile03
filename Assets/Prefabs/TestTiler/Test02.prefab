@@ -1,0 +1,325 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2289577038736244059
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2289577038736244061}
+  - component: {fileID: 2289577038736244058}
+  m_Layer: 0
+  m_Name: Test02
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2289577038736244061
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2289577038736244059}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.7499237, y: -1.0067339, z: 18.388237}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2289577038736244058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2289577038736244059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b197da227b83a745997c1aa97669322, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 3117171569847213782, guid: 4b4ce9362193e91428578920193edf36, type: 3}
+    - {fileID: 3117171569847213782, guid: 72e704e0e64c04b478500732fbf146d5, type: 3}
+    - {fileID: 3117171569847213782, guid: 27f23fa679efb4d419b007e9543d37c8, type: 3}
+    - {fileID: 3117171569847213782, guid: 2c0d49b42daf0ec4d96015043cca6954, type: 3}
+    - {fileID: 3117171569847213782, guid: 1dde81cdb6386564fbdcb4541902b14a, type: 3}
+    - {fileID: 3117171569847213782, guid: d476c13f77982ba4889b61f0e6e6dfb9, type: 3}
+    - {fileID: 3117171569847213782, guid: 9f862845845808d41aee8d5b3708648f, type: 3}
+    - {fileID: 3117171569847213782, guid: 4e8ca15055c3d74428b8cfad7419a9f0, type: 3}
+    - {fileID: 3117171569847213782, guid: 4e8335db71526714b8f389f2429dd85d, type: 3}
+    - {fileID: 3117171569847213782, guid: 9b12d41b780dcd144a736e890ca5e18e, type: 3}
+    - {fileID: 3117171569847213782, guid: 2885512b1adde7648a6f805044753c0d, type: 3}
+    - {fileID: 3117171569847213782, guid: e5fe93e4e9fe21e49b367f030f31104c, type: 3}
+    - {fileID: 3117171569847213782, guid: 17ccb668b3453ad4ea21c9956e52ab35, type: 3}
+    - {fileID: 3117171569847213782, guid: e524c5d0f4a51584396b85c9f72cd427, type: 3}
+    - {fileID: 3117171569847213782, guid: fc7c202c1f5419a49b02ef94f051822d, type: 3}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: ReadOnlyTable
+      Entry: 7
+      Data: 0|MapGrid01[,], Assembly-CSharp
+    - Name: 
+      Entry: 12
+      Data: 15
+    - Name: ranks
+      Entry: 1
+      Data: 5|3
+    - Name: 
+      Entry: 7
+      Data: 1|MapGrid01, Assembly-CSharp
+    - Name: test
+      Entry: 5
+      Data: false
+    - Name: tile
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 2|MapGrid01, Assembly-CSharp
+    - Name: test
+      Entry: 5
+      Data: false
+    - Name: tile
+      Entry: 10
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 3|MapGrid01, Assembly-CSharp
+    - Name: test
+      Entry: 5
+      Data: false
+    - Name: tile
+      Entry: 10
+      Data: 2
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 4|MapGrid01, Assembly-CSharp
+    - Name: test
+      Entry: 5
+      Data: false
+    - Name: tile
+      Entry: 10
+      Data: 3
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 5|MapGrid01, Assembly-CSharp
+    - Name: test
+      Entry: 5
+      Data: false
+    - Name: tile
+      Entry: 10
+      Data: 4
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 6|MapGrid01, Assembly-CSharp
+    - Name: test
+      Entry: 5
+      Data: false
+    - Name: tile
+      Entry: 10
+      Data: 5
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 7|MapGrid01, Assembly-CSharp
+    - Name: test
+      Entry: 5
+      Data: false
+    - Name: tile
+      Entry: 10
+      Data: 6
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 8|MapGrid01, Assembly-CSharp
+    - Name: test
+      Entry: 5
+      Data: false
+    - Name: tile
+      Entry: 10
+      Data: 7
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 9|MapGrid01, Assembly-CSharp
+    - Name: test
+      Entry: 5
+      Data: false
+    - Name: tile
+      Entry: 10
+      Data: 8
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 10|MapGrid01, Assembly-CSharp
+    - Name: test
+      Entry: 5
+      Data: false
+    - Name: tile
+      Entry: 10
+      Data: 9
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 11|MapGrid01, Assembly-CSharp
+    - Name: test
+      Entry: 5
+      Data: false
+    - Name: tile
+      Entry: 10
+      Data: 10
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 12|MapGrid01, Assembly-CSharp
+    - Name: test
+      Entry: 5
+      Data: false
+    - Name: tile
+      Entry: 10
+      Data: 11
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 13|MapGrid01, Assembly-CSharp
+    - Name: test
+      Entry: 5
+      Data: false
+    - Name: tile
+      Entry: 10
+      Data: 12
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 14|MapGrid01, Assembly-CSharp
+    - Name: test
+      Entry: 5
+      Data: false
+    - Name: tile
+      Entry: 10
+      Data: 13
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 15|MapGrid01, Assembly-CSharp
+    - Name: test
+      Entry: 5
+      Data: false
+    - Name: tile
+      Entry: 10
+      Data: 14
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: blocks
+      Entry: 7
+      Data: 16|UnityEngine.GameObject[,], UnityEngine.CoreModule
+    - Name: 
+      Entry: 12
+      Data: 15
+    - Name: ranks
+      Entry: 1
+      Data: 5|3
+    - Name: 
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 10
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 2
+    - Name: 
+      Entry: 10
+      Data: 3
+    - Name: 
+      Entry: 10
+      Data: 4
+    - Name: 
+      Entry: 10
+      Data: 5
+    - Name: 
+      Entry: 10
+      Data: 6
+    - Name: 
+      Entry: 10
+      Data: 7
+    - Name: 
+      Entry: 10
+      Data: 8
+    - Name: 
+      Entry: 10
+      Data: 9
+    - Name: 
+      Entry: 10
+      Data: 10
+    - Name: 
+      Entry: 10
+      Data: 11
+    - Name: 
+      Entry: 10
+      Data: 12
+    - Name: 
+      Entry: 10
+      Data: 13
+    - Name: 
+      Entry: 10
+      Data: 14
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 

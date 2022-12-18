@@ -176,7 +176,7 @@ public class TileMapUtils
             var currentBank = tilePlacementGroups[bankIndex];
             if (currentBank != null)
             {
-                LimitRange(ref blockIndex, currentBank.tiles.Length);
+                LimitRange(ref blockIndex, currentBank.tileList.tiles.Length);
 
                 var position = Vector3.one;
                 if (selectedBlockCursor != null)
@@ -184,7 +184,7 @@ public class TileMapUtils
                     position = selectedBlockCursor.transform.position;
                     GameObject.DestroyImmediate(selectedBlockCursor);                    
                 }
-                selectedBlockCursor = GameObject.Instantiate(currentBank.tiles[blockIndex]);
+                //selectedBlockCursor = GameObject.Instantiate(currentBank.tileList.tiles[blockIndex].gameObject);
                 selectedBlockCursor.transform.position = position;
             }
         }

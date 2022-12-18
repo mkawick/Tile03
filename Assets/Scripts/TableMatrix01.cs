@@ -15,8 +15,22 @@ public class TableMatrix01 : SerializedMonoBehaviour
         SquareCells = true)]
     public MapGrid01[,] ReadOnlyTable;
 
-    [TableMatrix(HorizontalTitle = "X axis")]
+    [TableMatrix(HorizontalTitle = "Tile references")]
     public GameObject[,] blocks = new GameObject[5,3];
+
+    [ValueDropdown("myVectorValues"), OnValueChanged("NewDropDownSelection")]
+    public Vector3 MyVector;
+
+    // The selectable values for the dropdown, with custom names.
+    private ValueDropdownList<Vector3> myVectorValues = new ValueDropdownList<Vector3>()
+    {
+        {"Forward", Vector3.forward },
+        {"Back",    Vector3.back    },
+        {"Up",      Vector3.up      },
+        {"Down",    Vector3.down    },
+        {"Right",   Vector3.right   },
+        {"Left",    Vector3.left    },
+    };
 
     private static Vector2 selectedTile = new Vector2(-1, -1);
 
@@ -106,6 +120,19 @@ public class TableMatrix01 : SerializedMonoBehaviour
         Rect bottom = rect;
         bottom.Set(bottom.x + indent, bottom.y + bottom.height - shadowDepth - 1, bottom.width - indent - 1, shadowDepth);
         EditorGUI.DrawRect(bottom, dropShadow);
+    }
+
+    void NewDropDownSelection(Vector3 value)
+    {
+        Debug.Log($"selection {value}");
+
+        Debug.Log($"on selection, setup the tiles first");
+
+        // CreateData() with the current selection
+        Debug.Log($"then clear the selected tile");
+
+        //ValueDropdownItem item = myVectorValues.;
+        //int which = myVectorValues.Op;
     }
 }
 
